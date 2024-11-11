@@ -102,6 +102,6 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/fatear-s/fatear-s.github.io.git
+  repo: git@github.com:fatear-s/fatear-s.github.io.git
   branch: main
   token: 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
