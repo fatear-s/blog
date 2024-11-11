@@ -76,3 +76,21 @@ https://zhuanlan.zhihu.com/p/675458343
 ![image-20241111194057209](/images/githubblog2.png)
 
 链接https://blog.51cto.com/u_12763213/10979913
+
+### git connext 问题
+
+fatal: unable to access 'http://github.com/...':
+Failed to connect to github.com port 443 after ... ms: Couldn't connect to server
+
+解决方法：
+
+手动配置代理与系统代理一致
+
+```bash
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
+```
+
+### 下载hexo 提交工具连接问题
+
+需要关闭系统代理或者设置系统代理
