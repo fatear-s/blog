@@ -29,7 +29,7 @@
 <meta property="og:image" content="http://example.com/images/githubblog1.png">
 <meta property="og:image" content="http://example.com/images/githubblog2.png">
 <meta property="article:published_time" content="2024-11-10T14:10:38.000Z">
-<meta property="article:modified_time" content="2024-11-11T14:42:14.061Z">
+<meta property="article:modified_time" content="2024-11-11T15:04:13.887Z">
 <meta property="article:author" content="Fatear">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/images/githubblog1.png">
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          224 字
+          293 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          2 分钟
+          3 分钟
         
       </span>
     
@@ -325,6 +325,12 @@
 <p>在push之后，后再错误信息中包含url(remove secret from commit…)访问url可以给当前push添加许可</p>
 <p><img src="/images/githubblog2.png" srcset="/img/loading.gif" lazyload alt="image-20241111194057209"></p>
 <p>链接<a target="_blank" rel="noopener" href="https://blog.51cto.com/u_12763213/10979913">https://blog.51cto.com/u_12763213/10979913</a></p>
+<h3 id="git-connext-问题"><a href="#git-connext-问题" class="headerlink" title="git connext 问题"></a>git connext 问题</h3><p>fatal: unable to access ‘<a target="_blank" rel="noopener" href="http://github.com/">http://github.com/</a>…’:<br>Failed to connect to github.com port 443 after … ms: Couldn’t connect to server</p>
+<p>解决方法：</p>
+<p>手动配置代理与系统代理一致</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global http.proxy http://127.0.0.1:7890<br>git config --global https.proxy http://127.0.0.1:7890<br></code></pre></td></tr></table></figure>
+
+<h3 id="下载hexo-提交工具连接问题"><a href="#下载hexo-提交工具连接问题" class="headerlink" title="下载hexo 提交工具连接问题"></a>下载hexo 提交工具连接问题</h3><p>需要关闭系统代理或者设置系统代理</p>
 
                 
               </div>
