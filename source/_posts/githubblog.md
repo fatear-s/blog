@@ -61,3 +61,18 @@ git push origin main/git push -u origin main
 
 https://zhuanlan.zhihu.com/p/675458343
 
+### 代码安全问题
+
+ **error: GH013: Repository rule violations found for**
+
+**问题描述：**
+
+代码中包含明文密码等信息，会拒绝push
+
+**解决方案：**
+
+在push之后，后再错误信息中包含url(remove secret from commit...)访问url可以给当前push添加许可
+
+![image-20241111194057209](/images/githubblog2.png)
+
+链接https://blog.51cto.com/u_12763213/10979913
