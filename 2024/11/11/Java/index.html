@@ -19,15 +19,15 @@
   <meta name="author" content="Fatear">
   <meta name="keywords" content="">
   
-    <meta name="description" content="JavaPoint容器 不能存基本数据类型，只能存引用数据类型和包装类 ArrayList 泛型 static(修饰词)变量：相同类型不同对象之间的数据共享 public static int a; 可以类名调用 内存：堆中，静态区 类内存分配（字节码到方法区） ![image-20241111121638273](&#x2F;Users&#x2F;liutao&#x2F;Library&amp;#x2F">
+    <meta name="description" content="title：JavaJavaPoint容器 不能存基本数据类型，只能存引用数据类型和包装类 ArrayList 泛型 static(修饰词)变量：相同类型不同对象之间的数据共享 public static int a; 可以类名调用 内存：堆中，静态区 类内存分配（字节码到方法区） ![image-20241111121638273](&#x2F;Users&#x2F;liutao&#x2F;L">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Fatear Blog">
 <meta property="og:url" content="http://example.com/2024/11/11/Java/index.html">
 <meta property="og:site_name" content="Fatear Blog">
-<meta property="og:description" content="JavaPoint容器 不能存基本数据类型，只能存引用数据类型和包装类 ArrayList 泛型 static(修饰词)变量：相同类型不同对象之间的数据共享 public static int a; 可以类名调用 内存：堆中，静态区 类内存分配（字节码到方法区） ![image-20241111121638273](&#x2F;Users&#x2F;liutao&#x2F;Library&amp;#x2F">
+<meta property="og:description" content="title：JavaJavaPoint容器 不能存基本数据类型，只能存引用数据类型和包装类 ArrayList 泛型 static(修饰词)变量：相同类型不同对象之间的数据共享 public static int a; 可以类名调用 内存：堆中，静态区 类内存分配（字节码到方法区） ![image-20241111121638273](&#x2F;Users&#x2F;liutao&#x2F;L">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-11-11T04:17:16.164Z">
-<meta property="article:modified_time" content="2024-11-11T06:59:11.205Z">
+<meta property="article:modified_time" content="2024-11-12T07:13:20.316Z">
 <meta property="article:author" content="Fatear">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -237,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          214 字
+          470 字
         
       </span>
     
@@ -248,7 +248,7 @@
         
         
         
-          2 分钟
+          4 分钟
         
       </span>
     
@@ -299,7 +299,8 @@
             
               <div class="markdown-body">
                 
-                <h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><h2 id="Point"><a href="#Point" class="headerlink" title="Point"></a>Point</h2><p>容器</p>
+                <hr>
+<h2 id="title：Java"><a href="#title：Java" class="headerlink" title="title：Java"></a>title：Java</h2><h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><h2 id="Point"><a href="#Point" class="headerlink" title="Point"></a>Point</h2><p>容器</p>
 <p>不能存基本数据类型，只能存引用数据类型和包装类</p>
 <p>ArrayList</p>
 <p>泛型<Type></p>
@@ -323,11 +324,38 @@
 <p>默认父类:Object()</p>
 <p>子类能继承父类</p>
 <p>构造方法不能继承</p>
+<p>this.name 本类</p>
+<p>super.name 父类</p>
+<p>this,super 都符合就近原则，本类找不到就父类找，直到找到</p>
 <p>成员变量</p>
 <p>private 继承但不可直接使用</p>
 <p>成员方法</p>
-<p>虚方法表（非private，非static，非final）</p>
+<p>虚方法表（非private，非static，非final）继承</p>
 <p>内存分析工具</p>
+<p>jps  查看类的ID</p>
+<p>jhsdb 内存查看</p>
+<p>重新，就是覆盖虚方发表中的方法。</p>
+<p>父类构造方法</p>
+<p>Super()父类无参构造，可以有参构造</p>
+<p>this()本类构造方法</p>
+<p>类的基本方法，ClassLayout.praseInstance(calss s )</p>
+<h3 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h3><p>子类对象赋值给父类引用</p>
+<p>继承关系</p>
+<p>父类引用</p>
+<p>方法重写</p>
+<p>Person  p &#x3D; new Student()</p>
+<p>成员变量，与成员方法区别：</p>
+<p>成员变量没有重写这一个说法，就近原则，而成员方法会调用子类重写的方法。</p>
+<p>编译的时候看父类的声明，父类没有就报错</p>
+<p>成员变量，编译看左边，运行看左边</p>
+<p>成员方法，编译看左边，运行看右边</p>
+<p>使用：</p>
+<p>定义方法，传入参数是父类，就可以接受所有子类的传入</p>
+<p>类型强制转换</p>
+<p>(Student) p;</p>
+<p>判断引用是不是某类型</p>
+<p>引用 instanceof type</p>
+<p>引用 instanceof type 引用1</p>
 
                 
               </div>
