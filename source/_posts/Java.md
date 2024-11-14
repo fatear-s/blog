@@ -8,13 +8,23 @@ title: Java
 
 ## Point
 
-容器
+### String 
+
+```java
+"-".repeat(count)
+```
+
+
+
+### 容器
 
 不能存基本数据类型，只能存引用数据类型和包装类
 
 ArrayList
 
 泛型<Type>
+
+Comparator<Type>接口,重写compare方法进行使用,ArrayList.sort(list,Comparator<type>)
 
 
 
@@ -139,4 +149,72 @@ Person  p = new Student()
 引用 instanceof type
 
 引用 instanceof type 引用1
+
+### 包
+
+包就是文件夹
+
+package 包名;
+
+不需要导入包：1同一个包中的类。2Java.lang包中的类
+
+### final
+
+修饰方法
+
+不能够重写
+
+修饰类
+
+不能够被继承
+
+修饰变量
+
+变量只能够被赋值一次
+
+![image-20241113101959831](/Users/liutao/Library/Application Support/typora-user-images/image-20241113101959831.png)
+
+修饰引用数据类型
+
+地址不能够变
+
+![image-20241113102927823](/Users/liutao/Library/Application Support/typora-user-images/image-20241113102927823.png)
+
+### 代码块
+
+{}
+
+#### 局部代码块（淘汰）
+
+提前结束变量的生命周期
+
+#### 构造代码块(淘汰)
+
+构造方法中重复的代码,写在成员位置代码块
+
+#### 静态代码块
+
+Static{}
+
+只执行一次
+
+类加载时，执行一些代码块
+
+### 抽象类和抽象方法
+
+public abstract class 
+
+### 接口
+
+行为的抽象
+
+public interface 接口名{}
+
+public class 类名 implements 接口名1,接口名2{}
+
+接口成员变量，只能够是常量
+
+构造方法，无
+
+成员方法，jdk7 只能够抽象方法
 
